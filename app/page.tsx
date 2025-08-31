@@ -33,11 +33,11 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="w-36 h-36 md:w-44 md:h-44 border-2 border-[var(--color-ink)] overflow-hidden bg-[var(--color-surface)] self-end md:self-center">
+              <div className="w-36 h-36 md:w-44 md:h-44 overflow-hidden self-end md:self-center bg-transparent border-0">
                 <img
-                  src="/images/cat-mascot-square.png"
+                  src="/images/cat-mascot-vintage.png"
                   alt={
-                    "Orange and white round-faced animated cat with spectacles wearing a green shirt with </> symbol"
+                    "Orange and white round-faced animated cat with spectacles, eyelashes and eyeliner, wearing a green shirt with </> symbol, vintage style"
                   }
                   width={176}
                   height={176}

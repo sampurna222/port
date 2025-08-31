@@ -1,16 +1,21 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistMono } from "geist/font/mono"
-import { Analytics } from "@vercel/analytics/next"
 import { Poppins } from "next/font/google"
 import { Suspense } from "react"
 import "./globals.css"
+import { JetBrains_Mono } from "next/font/google"
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-poppins",
+})
+
+const geistMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist-mono",
 })
 
 export const metadata: Metadata = {
@@ -26,11 +31,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} antialiased`}>
-      <body className={`${GeistMono.variable}`}>
-        <Suspense fallback={null}>
-          {children}
-          <Analytics />
-        </Suspense>
+      <body className={`${geistMono.variable}`}>
+        <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>
   )

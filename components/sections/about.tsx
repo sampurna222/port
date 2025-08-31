@@ -4,7 +4,7 @@ export function About() {
       <div className="mx-auto max-w-5xl px-4">
         <div className="grid items-start gap-6 md:grid-cols-3">
           <div className="md:col-span-2 retro-card p-6">
-            <h2 className="text-2xl font-bold text-balance">Hi, I’m Sampurna Chakrabarty</h2>
+            <h2 className="text-2xl font-bold text-balance">HI!!</h2>
             <p className="mt-3 leading-relaxed">
               Hello!! I am an enthusiastic yet chaotic 3rd year engineering student who is trying hard to balance
               between passion and profession at the same time.
